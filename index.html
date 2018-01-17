@@ -21,23 +21,30 @@
 
 	<nav class="navbar navbar-light bg-light navbar-expand-sm">
 		<a class="navbar-brand" href="#">Campus Compass</a>
+		<div class="dropdown">
+			<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+				Locations
+			</a>
+			<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+				<a onclick="setLatLong(49.014134,8.419819)" class="dropdown-item" href="#">Infobau</a>
+				<a onclick="setLatLong(49.011136,8.411021)" class="dropdown-item" href="#">Mathebau</a>
+				<a onclick="setLatLong(49.011213,8.416388)" class="dropdown-item" href="#">Bibliothek</a>
+				<a onclick="setLatLong(49.011719,8.416952)" class="dropdown-item" href="#">Mensa</a>
+			</div>
+		</div>
+		
 	</nav>
 
-	<div class="container-fluid">
-		<button onclick="setLatLong(49.014134,8.419819)" type="button" class="btn btn-outline-dark btn-block">Infobau</button>
-		<button onclick="setLatLong(49.011136,8.411021)" type="button" class="btn btn-outline-dark btn-block">Mathebau</button>
-		<button onclick="setLatLong(49.011213,8.416388)" type="button" class="btn btn-outline-dark btn-block">Bibliothek</button>
-		<button onclick="setLatLong(49.011719,8.416952)" type="button" class="btn btn-outline-dark btn-block">Mensa</button>
-	</div>
+	
 
 
 	<div class="container-fluid">
 		<canvas id="mycanvas"></canvas>
 	</div>
 
-	<footer>
-		<h3 class="footer-text">Autor: Lennard Sommer</h3>
-	</footer>
+	<div class="footer-bottom bg-light">
+		<p class="footer-text">© Lennard Sommer</p>
+	</div>
 
 	<script src="main.js"></script>
 
