@@ -21,16 +21,16 @@
 <body>
 
 	<nav class="navbar navbar-light bg-light navbar-expand-sm">
-		<a class="navbar-brand" href="#"><span class="oi oi-compass" title="icon name" aria-hidden="true"></span> Campus Compass</a>
+		<a class="navbar-brand" href="#"><span class="oi oi-compass" title="compass" aria-hidden="true"></span> Campus Compass</a>
 		<div class="dropdown">
 			<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 				Locations
 			</a>
 			<div class="dropdown-menu" aria-labelledby="navbarDropdown">
-				<a onclick="setLatLong(49.014134,8.419819)" class="dropdown-item" href="#">Infobau</a>
-				<a onclick="setLatLong(49.011136,8.411021)" class="dropdown-item" href="#">Mathebau</a>
-				<a onclick="setLatLong(49.011213,8.416388)" class="dropdown-item" href="#">Bibliothek</a>
-				<a onclick="setLatLong(49.011719,8.416952)" class="dropdown-item" href="#">Mensa</a>
+				<a onclick="setLatLong(49.014134,8.419819,'Infobau')" class="dropdown-item" href="#">Infobau</a>
+				<a onclick="setLatLong(49.011136,8.411021,'Mathebau')" class="dropdown-item" href="#">Mathebau</a>
+				<a onclick="setLatLong(49.011213,8.416388,'Bibliothek')" class="dropdown-item" href="#">Bibliothek</a>
+				<a onclick="setLatLong(49.011719,8.416952,'Mensa')" class="dropdown-item" href="#">Mensa</a>
 			</div>
 		</div>
 		
@@ -38,7 +38,12 @@
 
 	
 
-
+	
+	<div class="card destination">
+		<div class="card-body">
+			<span class="oi oi-map" title="map" aria-hidden="true"></span> <span id="dest">Infobau</span>
+		</div>
+	</div>
 	<div class="container-fluid canvas-container">
 		<canvas id="mycanvas"></canvas>
 

@@ -60,7 +60,9 @@
 		}, 2000);
 
 
-		function setLatLong(lat,long) {
+		function setLatLong(lat,long,dest) {
 			otherLat = lat;
 			otherLong = long;
+
+			$('#dest').text(dest);
 		}
