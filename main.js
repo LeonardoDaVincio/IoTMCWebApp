@@ -81,3 +81,24 @@
 
 			$('#dest').text(dest);
 		}
+
+		var blur = false;
+		function blurry() {
+
+			if (!blur) {
+				$('body').css({
+					"-webkit-filter": "blur(5px)",
+					"filter": "blur(5px)"
+				});
+				blur = true;
+			} else {
+				$('body').css({
+					"-webkit-filter": "blur(0px)",
+					"filter": "blur(0px)"
+				});
+				blur = false;
+			}
+			
+			
+			
+		}

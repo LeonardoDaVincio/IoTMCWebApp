@@ -18,7 +18,7 @@
 	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
 
-<body>
+<body id="mybody">
 
 	<nav class="navbar navbar-light bg-light navbar-expand-sm">
 		<a class="navbar-brand" href="#"><span class="oi oi-compass" title="compass" aria-hidden="true"></span> Campus Compass</a>
@@ -72,6 +72,8 @@
 		<p class="footer-text d-sm-none">© Lennard Sommer | MC &amp; IoT</p>
 		<p class="footer-text d-none d-sm-block">© Lennard Sommer | For Mobile Computing and Internet of Things</p>
 	</div>
+
+	<button id="blurbtn" type="button" class="btn btn-light btn-block" onclick="blurry()" >Debug: Toggle Blur Test</button>
 
 	<script src="main.js"></script>
 
