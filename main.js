@@ -21,6 +21,8 @@
 		window.addEventListener('deviceorientation', function(event) {
 			
 			$("#noacc").css("display","none");
+			$("#destination").css("display","block");
+			$("#locationdropdown").css("display","block");
 
 			if (otherLat == 0 && otherLong == 0) {
 
