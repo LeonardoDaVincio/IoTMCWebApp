@@ -39,6 +39,9 @@
     #mynote{
     	display: none;
     } 
+    .destination{
+        display: block;
+    }
 }  
 @media all and (orientation:landscape) {  
     #mycanvas{
@@ -47,4 +50,7 @@
     #mynote{
     	display: block;
     } 
+    .destination{
+        display: none;
+    }
 }  
