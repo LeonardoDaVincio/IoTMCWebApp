@@ -26,7 +26,7 @@
 
 			if (otherLat == 0 && otherLong == 0) {
 
-				var result = alpha++;
+				var result = alpha;
 
 			} else {
 				getLocation();
