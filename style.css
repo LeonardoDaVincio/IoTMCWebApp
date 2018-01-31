@@ -18,6 +18,7 @@
 .destination {
     text-align: center;
     display: none;
+    margin-top: 20px;
 }
 
 #noacc {
@@ -26,10 +27,6 @@
 
 #locationdropdown {
     display: none;
-}
-
-#blurbtn {
-    margin: 20px;
 }
 
 @media all and (orientation:portrait) {  
