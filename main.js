@@ -5,8 +5,8 @@
 
 		var alpha = 0;
 
-		var otherLat = 49.0038415;
-		var otherLong = 8.4180178;
+		var otherLat = 0;
+		var otherLong = 0;
 
 		function getLocation() {
 			if (navigator.geolocation) {
@@ -19,10 +19,19 @@
 		}
 
 		window.addEventListener('deviceorientation', function(event) {
-			getLocation();
-			alpha = event.alpha;
+			
+			
 
-			var result = parseInt(alpha + heading)
+			if (otherLat == 0 && otherLong == 0) {
+
+				var result = alpha++;
+
+			} else {
+				getLocation();
+				alpha = event.alpha;
+				var result = parseInt(alpha + heading)
+			}
+			
 
 			var img = new Image();
   			img.src = "arrow.png";
@@ -60,7 +69,7 @@
 		}, 2000);
 
 
-		function setLatLong(lat,long,dest) {
+		function setLatLong(lat, long, dest) {
 			otherLat = lat;
 			otherLong = long;
 
