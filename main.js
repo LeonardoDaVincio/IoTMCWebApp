@@ -20,7 +20,7 @@
 
 		window.addEventListener('deviceorientation', function(event) {
 			
-			
+			$("#noacc").hide();
 
 			if (otherLat == 0 && otherLong == 0) {
 
@@ -69,7 +69,7 @@
 			}
 
 			
-			
+
 		}, 2000);
 
 
