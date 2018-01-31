@@ -34,8 +34,8 @@
 			
 
 			var img = new Image();
-  			img.src = "arrow.png";
-  			half_width = img.naturalWidth / 2;
+			img.src = "arrow.png";
+			half_width = img.naturalWidth / 2;
 			half_height = img.naturalHeight / 2;
 
 			var canvas = document.getElementById("mycanvas");
@@ -60,12 +60,16 @@
 
 		window.setInterval(function(){
 
-			var myLatLng = new google.maps.LatLng(myLat, myLong); 
+			if(!(otherLat == 0 && otherLong == 0)) {
+				var myLatLng = new google.maps.LatLng(myLat, myLong); 
 
-			var otherLatLng = new google.maps.LatLng(otherLat, otherLong);
+				var otherLatLng = new google.maps.LatLng(otherLat, otherLong);
 
-  			heading = google.maps.geometry.spherical.computeHeading(otherLatLng, myLatLng);
-  			
+				heading = google.maps.geometry.spherical.computeHeading(otherLatLng, myLatLng);
+			}
+
+			
+			
 		}, 2000);
 
 
