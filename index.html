@@ -50,7 +50,7 @@
 
 		<div id="noacc" class="card">
 			<div class="card-header">
-				Error: No accelerometer!
+				<span class="badge badge-danger">Error</span> No accelerometer!
 			</div>
 			<div class="card-body">
 				<p>Your device does not have an accelerometer! Sadly, the Campus Compass will not work.</p>
@@ -59,7 +59,7 @@
 
 		<div id="mynote" class="card">
 			<div class="card-header">
-				Error: Landscape mode detected!
+				<span class="badge badge-danger">Error</span> Landscape mode detected!
 			</div>
 			<div class="card-body">
 				<p>This app only works in potrait mode! Please turn your device. Thank you.</p>
@@ -73,7 +73,10 @@
 		<p class="footer-text d-none d-sm-block">© Lennard Sommer | For Mobile Computing and Internet of Things</p>
 	</div>
 
-	<button id="blurbtn" type="button" class="btn btn-light btn-block" onclick="blurry()" >Debug: Toggle Blur Test</button>
+	<div class="container">
+		<button id="blurbtn" type="button" class="btn btn-outline-dark btn-block" onclick="blurry()" >Debug: Toggle Blur Test</button>
+	</div>
+	
 
 	<script src="main.js"></script>
 
