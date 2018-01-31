@@ -87,8 +87,8 @@
 
 			if (!blur) {
 				$('body').css({
-					"-webkit-filter": "blur(5px)",
-					"filter": "blur(5px)"
+					"-webkit-filter": "blur(2px)",
+					"filter": "blur(2px)"
 				});
 				blur = true;
 			} else {
